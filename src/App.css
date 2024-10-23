@@ -2,36 +2,52 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Ajusta esta altura según tus necesidades */
-  background: linear-gradient(to bottom right, #34495e, #2c3e50); /* Fondo degradado oscuro */
+  flex-direction: column;
+  height: 100vh;
+  /* Ajusta esta altura según tus necesidades */
+  background: #f5f5f5;
+  /* Fondo degradado oscuro */
 }
 
 .start-button {
-  padding: 15px 30px;
+  padding: 8px 0px;
   font-size: 18px;
   font-weight: bold;
-  border-radius: 50px;
+  border-radius: 15px;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  background: linear-gradient(to bottom right, #2ecc71, #74b9ff); /* Degradado verde y azul */
+  text-decoration: none;
   color: #fff;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #8964bd;
+  width: 200px;
+  text-align: center;
+  
+
+  /* background-image: linear-gradient(#ff1cf7 25%, #7200ffe8); */
+  /* -webkit-background-clip: text; */
+  /* background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .start-button:hover {
-  background: linear-gradient(to bottom right, #74b9ff, #2ecc71); /* Invertir el degradado */
-  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
-  transform: translateY(-5px);
-  border: 2px solid #fff; /* Agregar borde blanco al pasar el mouse */
-  color: #2c3e50; /* Cambiar el color del texto */
+  background: #4d06b1;
+  /* box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4); */
+  color: #fff;
+  /* transform: translateY(-5px); */
+  /* border: 2px solid #fff; */
 }
 
 .start-button:active {
-  background: #fff; /* Fondo blanco al hacer clic */
-  color: #333;
-  transform: scale(1.1); /* Aumentar ligeramente el tamaño */
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Agregar una sombra más pronunciada */
+  /* background: #fff; */
+  /* Fondo blanco al hacer clic */
+  /* color: #333; */
+  transform: scale(0.9);
+  /* Aumentar ligeramente el tamaño */
+  /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); */
+  /* Agregar una sombra más pronunciada */
 }
 
 /* Estilo general para los botones en el proyecto */
@@ -54,7 +70,7 @@ button {
   /* Mostrar el cursor de mano */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   /* Un box-shadow suave */
-  transition: background-color 0.3s ease;
+  transition: background-color 0.2s ease;
   /* Transición suave al hacer hover */
 }
 

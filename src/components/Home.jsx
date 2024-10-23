@@ -1,6 +1,7 @@
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useRef } from 'react';
 import { gsap } from 'gsap';
+import { FaArrowRight } from "react-icons/fa";
 import '../App.css';
 
 function Home() {
@@ -10,9 +11,9 @@ function Home() {
     const handleClick = () => {
         // Efecto de explosión
         gsap.to(buttonRef.current, {
-            scale: 5.5,
+            scale: 3.5,
             opacity: 0.5,
-            duration: 0.8,
+            duration: 0.6,
             ease: "power1.out",
             onComplete: () => {
                 navigate('/carrito');
@@ -22,13 +23,12 @@ function Home() {
 
     return (
         <div className="contenedorComenzar">
-            <button
-                className="start-button"
+            <h1>COMENZAR</h1>
+            <Link className="start-button"
                 onClick={handleClick}
-                ref={buttonRef} // Asignar la referencia al botón
-            >
-                Comenzar
-            </button>
+                ref={buttonRef}>
+                    <FaArrowRight />  SIGUIENTE
+            </Link>
         </div>
     );
 }
