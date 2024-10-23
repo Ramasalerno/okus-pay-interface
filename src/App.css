@@ -1,0 +1,63 @@
+
+/* Estilo para el botón "Comenzar" como texto */
+.start-button {
+  background-color: transparent;
+  /* Fondo transparente para que no se vea como un botón */
+  border: none;
+  /* Sin borde */
+  font-size: 3rem;
+  /* Tamaño del texto */
+  font-weight: bold;
+  /* Texto en negrita */
+  text-transform: uppercase;
+  /* Texto en mayúsculas */
+  color: #431287;
+  /* Color del texto (el morado que definimos) */
+  cursor: pointer;
+  /* El cursor de mano para indicar que es clickeable */
+}
+
+.start-button:hover {
+  text-decoration: underline;
+  /* Un efecto hover para mostrar que es interactivo */
+}
+
+/* Fondo claro para la pantalla de inicio */
+.contenedorComenzar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  /* Fondo claro */
+}
+
+/* Estilo general para los botones en el proyecto */
+button {
+  background-color: #431287;
+  /* Color de fondo morado */
+  color: #fff;
+  /* Letras en blanco */
+  font-weight: bold;
+  /* Texto en negrita */
+  text-transform: uppercase;
+  /* Texto en mayúsculas */
+  border: none;
+  /* Sin borde por defecto */
+  padding: 1rem 2rem;
+  /* Tamaño cómodo del botón */
+  border-radius: 8px;
+  /* Un border-radius estético */
+  cursor: pointer;
+  /* Mostrar el cursor de mano */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Un box-shadow suave */
+  transition: background-color 0.3s ease;
+  /* Transición suave al hacer hover */
+}
+
+/* Cambios en el hover para los botones */
+button:hover {
+  background-color: #2196C2;
+  /* Cambia a azul en hover (opcional, pero añade interacción) */
+}
