@@ -44,14 +44,14 @@ function Gracias() {
     }, []); // Solo se ejecuta una vez al montar el componente
 
     return (
-        <div className="d-flex flex-column justify-content-center align-items-center vh-100 bg-white">
+        <div className="d-flex flex-column justify-content-center align-items-center vh-100 bg-gracias">
             <h1 
-            ref={textRef} className="text-center"
-            style={{ color: '#431287' }}
+            ref={textRef} className="text-center text-uppercase"
+            style={{ color: 'white' }}
             >Hola Martin Anusic</h1>
             <h1 
-            ref={textRef} className="text-center"
-            style={{ color: '#431287' }}
+            ref={textRef} className="text-center text-uppercase"
+            style={{ color: 'white' }}
             >Muchas gracias por su compra</h1>
             {/* Agrega tu imagen aquí y reduce su tamaño al 50% */}
             <img 
