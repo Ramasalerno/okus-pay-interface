@@ -39,7 +39,7 @@ function MetodoPago() {
                 {/* Botón Volver Atrás en la esquina superior izquierda */}
             
                 <h1 ref={headingRef} className="text-center mb-5">
-                    <span>Métodos</span> <span>de</span> <span>Pago</span>
+                <span>ELEGIR</span> <span>METODO</span> <span>DE</span> <span>PAGO</span>
                 </h1>
                 <div className="row">
                     <div className="col-md-4">

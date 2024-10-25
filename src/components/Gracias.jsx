@@ -30,7 +30,7 @@ function Gracias() {
             })();
         };
 
-        launchConfetti(); // Llama a la función para lanzar confetti
+        /* launchConfetti() */; // Llama a la función para lanzar confetti
 
         // Animar el texto desde abajo hacia arriba usando Anime.js
         anime({
@@ -45,21 +45,22 @@ function Gracias() {
 
     return (
         <div className="d-flex flex-column justify-content-center align-items-center vh-100 bg-gracias">
-            <h1 
+            <img 
+                src="https://raw.githubusercontent.com/RamiroSB/imagenes/refs/heads/main/LogoSinFondo.png" 
+                alt="Descripción de la imagen" 
+                className="mt-1" 
+                style={{ width: '30%' }}
+            />
+            {/* <h1 
             ref={textRef} className="text-center text-uppercase"
             style={{ color: 'white' }}
-            >Hola Martin Anusic</h1>
+            >Hola Martin Anusic</h1> */}
             <h1 
             ref={textRef} className="text-center text-uppercase"
             style={{ color: 'white' }}
             >Muchas gracias por su compra</h1>
             {/* Agrega tu imagen aquí y reduce su tamaño al 50% */}
-            <img 
-                src="https://raw.githubusercontent.com/RamiroSB/imagenes/refs/heads/main/LogoSinFondo.png" 
-                alt="Descripción de la imagen" 
-                className="mt-4" 
-                style={{ width: '20%' }}
-            />
+            
         </div>
     );
 }

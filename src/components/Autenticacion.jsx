@@ -17,7 +17,7 @@ function Autenticacion() {
             </button>
 
             <div className="text-center">
-                <h1 className="mb-4">Coloque su mano en el dispositivo</h1>
+                <h1 className="mb-4 text-uppercase">Coloque su mano en el dispositivo</h1>
                 <button
                     className="botonEscanearPalma"
                     onClick={() => navigate('/escaneando')}>
