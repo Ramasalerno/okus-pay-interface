@@ -55,7 +55,7 @@ function Gracias() {
             >Muchas gracias por su compra</h1>
             {/* Agrega tu imagen aquí y reduce su tamaño al 50% */}
             <img 
-                src="https://raw.githubusercontent.com/RamiroSB/imagenes/refs/heads/main/lastVersionLogo.png" 
+                src="https://raw.githubusercontent.com/RamiroSB/imagenes/refs/heads/main/LogoSinFondo.png" 
                 alt="Descripción de la imagen" 
                 className="mt-4" 
                 style={{ width: '20%' }}

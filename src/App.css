@@ -21,7 +21,6 @@ h1 {
   font-weight: bold;
   border-radius: 15px;
   border: none;
-  cursor: pointer;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
   color: #fff;
@@ -66,6 +65,20 @@ h1 {
 
 .bg-gracias {
   background-color: #008f39;
+}
+
+.botonEscanearPalma{
+  transition: all 0.3s ease-in-out !important;
+  text-decoration: none;
+  background-color: #8964bd;
+  cursor: pointer;
+  border-radius: 15px;
+
+}
+
+.botonEscanearPalma:hover {
+  background: #4d06b1;
+  color: #fff;
 }
 
 /* Estilo general para los botones en el proyecto */
