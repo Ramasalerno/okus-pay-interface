@@ -10,7 +10,7 @@ function Autenticacion() {
                 <button
                     className="btn btn-primary btn-lg"
                     onClick={() => navigate('/gracias')}>
-                    Simular Autenticación
+                    Escanear palma
                 </button>
             </div>
         </div>

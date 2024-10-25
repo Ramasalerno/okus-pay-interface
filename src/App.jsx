@@ -4,6 +4,7 @@ import Carrito from './components/Carrito';
 import MetodoPago from './components/MetodoPago';
 import Autenticacion from './components/Autenticacion';
 import Gracias from './components/Gracias';
+import Escaneando from './components/Escaneando';
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 				<Route path="/carrito" element={<Carrito />} />
 				<Route path="/metodo-pago" element={<MetodoPago />} />
 				<Route path="/autenticacion" element={<Autenticacion />} />
+				<Route path="/escaneando" element={<Escaneando />} />
 				<Route path="/gracias" element={<Gracias />} />
 			</Routes>
 		</Router>
