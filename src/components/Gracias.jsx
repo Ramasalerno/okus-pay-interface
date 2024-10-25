@@ -1,14 +1,13 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import confetti from 'canvas-confetti';
-import anime from 'animejs/lib/anime.es.js';
 
 function Gracias() {
-    const textRef = useRef(null); // Referencia para el texto
+    const [isAnimating, setIsAnimating] = useState(true); // Estado para controlar la animación
 
     useEffect(() => {
         // Función para lanzar confetti
         const launchConfetti = () => {
-            const duration = 0.5 * 1000; // Duración en milisegundos
+            const duration = 0.1 * 1000; // Duración en milisegundos
             const end = Date.now() + duration;
 
             // Lanza confetti hasta que se cumpla la duración
@@ -30,37 +29,38 @@ function Gracias() {
             })();
         };
 
-        /* launchConfetti() */; // Llama a la función para lanzar confetti
+        launchConfetti(); // Llama a la función para lanzar confetti
 
-        // Animar el texto desde abajo hacia arriba usando Anime.js
-        anime({
-            targets: textRef.current,
-            translateY: [50, 0], // Desde 50px abajo a su posición original
-            opacity: [0, 1], // De invisible a visible
-            duration: 3000, // Duración de la animación en milisegundos
-            easing: 'easeOutExpo', // Easing para suavizar la animación
-        });
+        // Cambiar el estado al finalizar la animación del círculo
+        setTimeout(() => {
+            setIsAnimating(false);
+        }, 3000); // Esperar 3 segundos antes de mostrar el contenido
 
     }, []); // Solo se ejecuta una vez al montar el componente
 
     return (
-        <div className="d-flex flex-column justify-content-center align-items-center vh-100 bg-gracias">
-            <img 
-                src="https://raw.githubusercontent.com/RamiroSB/imagenes/refs/heads/main/LogoSinFondo.png" 
-                alt="Descripción de la imagen" 
-                className="mt-1" 
-                style={{ width: '30%' }}
-            />
-            {/* <h1 
-            ref={textRef} className="text-center text-uppercase"
-            style={{ color: 'white' }}
-            >Hola Martin Anusic</h1> */}
-            <h1 
-            ref={textRef} className="text-center text-uppercase"
-            style={{ color: 'white' }}
-            >Muchas gracias por su compra</h1>
-            {/* Agrega tu imagen aquí y reduce su tamaño al 50% */}
+        <div className="vh-100 position-relative">
+            {/* Círculo de fondo */}
+            {isAnimating && (
+                <div className="circle-animation">
+                    <h1 
+                        className="text-center text-uppercase"
+                        style={{ color: 'white', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', fontSize: '0.3rem' }} // Ajustar tamaño aquí
+                    >
+                        Muchas gracias por su compra
+                    </h1>
+                </div>
+            )}
             
+            {/* Contenido principal */}
+            <div className={`d-flex flex-column justify-content-center align-items-center vh-100 ${isAnimating ? 'd-none' : ''}`}>
+                <img 
+                    src="https://raw.githubusercontent.com/RamiroSB/imagenes/refs/heads/main/okusp/okplv.png" 
+                    alt="Descripción de la imagen" 
+                    className="imagenGracias" 
+                    style={{ width: '50%' }}
+                />
+            </div>
         </div>
     );
 }

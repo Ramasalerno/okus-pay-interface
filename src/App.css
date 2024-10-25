@@ -81,6 +81,32 @@ h1 {
   color: #fff;
 }
 
+.imagenGracias{
+  margin-top: 0em;
+}
+
+
+.circle-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #008f39; /* Color verde */
+  border-radius: 50%; /* Hacerlo circular */
+  animation: expandCircle 1.5s ease forwards; /* Animación de expansión */
+}
+
+@keyframes expandCircle {
+  from {
+      transform: scale(0); /* Comienza en tamaño cero */
+  }
+  to {
+      transform: scale(10); /* Escala a un tamaño grande */
+  }
+}
+
+
 /* Estilo general para los botones en el proyecto */
 button {
   background-color: #431287;
