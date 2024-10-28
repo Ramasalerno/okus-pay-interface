@@ -1,9 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useRef } from 'react';
 import { gsap } from 'gsap';
-// import { FaArrowRight } from "react-icons/fa";
 import '../App.css';
-import ButtonNext from './ButtonNext/ButtonNext';
 import WaterRippleEffect from './WaterRippleEffect/WaterRippleEffect';
 
 function Home() {
@@ -26,15 +24,13 @@ function Home() {
     return (
         <WaterRippleEffect onClick={handleClick}>
             <div className="contenedorComenzar">
-                <h1 style={{fontSize:"4em"}}>BIENVENIDO</h1>
-                {/* <button 
-                    className="start-button"
-                    onClick={handleClick}
-                    ref={buttonRef}
-                >
-                    <FaArrowRight /> SIGUIENTE
-                </button> */}
-                <ButtonNext />
+                <h1 className='textoBienvenida'>BIENVENIDO</h1>
+                
+                <div style={{ display: 'inline-flex' }}>
+                <h5 className='ButtonNext'>
+                    Para comenzar haga click en cualquier parte de la pantalla
+                </h5>
+            </div>
             </div>
         </WaterRippleEffect>
     );

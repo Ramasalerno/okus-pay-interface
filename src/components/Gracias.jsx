@@ -29,7 +29,7 @@ function Gracias() {
             })();
         };
 
-        launchConfetti(); // Llama a la función para lanzar confetti
+        /* launchConfetti(); */ // Llama a la función para lanzar confetti
 
         // Cambiar el estado al finalizar la animación del círculo
         setTimeout(() => {
@@ -45,7 +45,7 @@ function Gracias() {
                 <div className="circle-animation">
                     <h1 
                         className="text-center text-uppercase"
-                        style={{ color: 'white', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', fontSize: '0.3rem' }} // Ajustar tamaño aquí
+                        style={{ color: 'white', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', fontSize: '0.5rem' }} // Ajustar tamaño aquí
                     >
                         Muchas gracias por su compra
                     </h1>
