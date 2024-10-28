@@ -1,9 +1,9 @@
 import { useNavigate } from 'react-router-dom';
 import { IoFingerPrintOutline } from "react-icons/io5";
 import { FaRegCreditCard, FaRegHandshake } from "react-icons/fa";
-import React, { useRef, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
-import { FaArrowLeft } from "react-icons/fa"; // Importar el ícono de flecha hacia la izquierda
+import ButtonPrevious from './ButtonPrevious/ButtonPrevious';
 
 function MetodoPago() {
     const navigate = useNavigate();
@@ -28,13 +28,7 @@ function MetodoPago() {
 
     return (
         <div>
-            <button 
-                className="btn btn-danger position-absolute" 
-                style={{ top: '20px', left: '20px', color: 'white' }}
-                onClick={() => navigate(-1)} // Navegar hacia atrás
-            >
-                <FaArrowLeft /> Volver atrás
-            </button>
+            <ButtonPrevious />
             <div className="container vh-100 d-flex flex-column justify-content-center position-relative">
                 {/* Botón Volver Atrás en la esquina superior izquierda */}
             

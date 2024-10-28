@@ -1,6 +1,6 @@
-import { useNavigate } from 'react-router-dom';
-import { FaArrowLeft } from "react-icons/fa"; // Importar el ícono de flecha hacia la izquierda
 import '../App.css';
+import ButtonPrevious from './ButtonPrevious/ButtonPrevious';
+import { useNavigate } from 'react-router-dom';
 
 function Carrito() {
     const navigate = useNavigate();
@@ -16,13 +16,8 @@ function Carrito() {
     return (
         <div>
             {/* Botón Volver Atrás en la esquina superior izquierda */}
-            <button 
-                className="btn btn-danger position-absolute" 
-                style={{ top: '20px', left: '20px', color: 'white' }}
-                onClick={() => navigate(-1)} // Navegar hacia atrás
-            >
-                <FaArrowLeft /> Volver atrás
-            </button>
+            <ButtonPrevious />
+            
             <div className="container vh-100 d-flex flex-column justify-content-center position-relative">
                 <h1 className="text-center mb-4 text-uppercase">Selecciona un rubro</h1>
                 <div className="row">

@@ -73,7 +73,15 @@ h1 {
   background-color: #8964bd;
   cursor: pointer;
   border-radius: 15px;
-
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
+  color: #fff;
 }
 
 .botonEscanearPalma:hover {
@@ -108,28 +116,18 @@ h1 {
 
 
 /* Estilo general para los botones en el proyecto */
-button {
+/* button {
   background-color: #431287;
-  /* Color de fondo morado */
   color: #fff;
-  /* Letras en blanco */
   font-weight: bold;
-  /* Texto en negrita */
   text-transform: uppercase;
-  /* Texto en mayúsculas */
   border: none;
-  /* Sin borde por defecto */
   padding: 1rem 2rem;
-  /* Tamaño cómodo del botón */
   border-radius: 8px;
-  /* Un border-radius estético */
   cursor: pointer;
-  /* Mostrar el cursor de mano */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  /* Un box-shadow suave */
   transition: background-color 0.2s ease;
-  /* Transición suave al hacer hover */
-}
+} */
 
 /* Cambios en el hover para los botones */
 button:hover {

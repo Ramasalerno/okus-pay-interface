@@ -1,12 +1,14 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useRef } from 'react';
 import { gsap } from 'gsap';
-import { FaArrowRight } from "react-icons/fa";
+// import { FaArrowRight } from "react-icons/fa";
 import '../App.css';
+import ButtonNext from './buttonNext/buttonNext';
+import WaterRippleEffect from './WaterRippleEffect/WaterRippleEffect';
 
 function Home() {
     const navigate = useNavigate();
-    const buttonRef = useRef(null); // Referencia para el botón
+    const buttonRef = useRef(null);
 
     const handleClick = () => {
         // Efecto de explosión
@@ -22,14 +24,19 @@ function Home() {
     };
 
     return (
-        <div className="contenedorComenzar">
-            <h1>COMENZAR</h1>
-            <Link className="start-button"
-                onClick={handleClick}
-                ref={buttonRef}>
-                    <FaArrowRight />  SIGUIENTE
-            </Link>
-        </div>
+        <WaterRippleEffect onClick={handleClick}>
+            <div className="contenedorComenzar">
+                <h1 style={{fontSize:"4em"}}>BIENVENIDO</h1>
+                {/* <button 
+                    className="start-button"
+                    onClick={handleClick}
+                    ref={buttonRef}
+                >
+                    <FaArrowRight /> SIGUIENTE
+                </button> */}
+                <ButtonNext />
+            </div>
+        </WaterRippleEffect>
     );
 }
 
