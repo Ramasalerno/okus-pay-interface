@@ -16,13 +16,13 @@ function Escaneando() {
 
     return (
         <div className="d-flex flex-column justify-content-center align-items-center vh-100 bg-black">
-            <h2 className="text-white">Verificando su identidad ...</h2>
-            <h3 className="text-white">Por favor, aguarde unos instantes</h3>
+            <h1 className="escaneandoText">Verificando su identidad ...</h1>
+            <h2 className="escaneandoTextMini">Por favor, aguarde unos instantes</h2>
             <img 
                 src="https://raw.githubusercontent.com/RamiroSB/imagenes/refs/heads/main/Biometr%C3%ADa.gif" 
                 alt="Descripción de la imagen" 
                 className="mt-4" 
-                style={{ width: '20%' }}
+                style={{ width: '40%' }}
             />
         </div>
     );
