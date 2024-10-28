@@ -5,6 +5,11 @@
   --clarito: #8964bd;
   --fondito: #000;
   ---fondito-claro: #f8f9fa;
+  ---color-titulos:  #5f5f5f;
+}
+
+.fondo {
+  background-color: var(--fondito);
 }
 
 
@@ -15,7 +20,17 @@ h1 {
 
 .textoBienvenida{
   font-size: 7em;
-  color: #5f5f5f;
+  color: var(---color-titulos);
+}
+
+.seleccionText{
+  font-size: 4em;
+  color: var(---color-titulos);
+}
+
+.seleccionTitulo {
+  font-size: 4em ;
+  color: var(---color-titulos);
 }
 
 .contenedorComenzar {
@@ -48,6 +63,12 @@ h1 {
   text-decoration: none;
   background-color: #8964bd;
   cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.botonMetodo{
+  border: none;
 }
 
 .botonSelectorPagos h5 {

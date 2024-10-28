@@ -27,31 +27,40 @@ function MetodoPago() {
     };
 
     return (
-        <div>
+        <div className='fondo'>
             <ButtonPrevious />
             <div className="container vh-100 d-flex flex-column justify-content-center position-relative">
                 {/* Botón Volver Atrás en la esquina superior izquierda */}
             
-                <h1 ref={headingRef} className="text-center mb-5">
+                <h1 ref={headingRef} className="text-center mb-5 seleccionTitulo">
                 <span>ELEGIR</span> <span>METODO</span> <span>DE</span> <span>PAGO</span>
                 </h1>
                 <div className="row">
-                    <div className="col-md-4">
-                        <div className="card shadow-lg mb-4" onClick={() => handlePago('mercado_pago')}>
+                    <div className="col-md-4 botonMetodo">
+                        <div className="card shadow-lg mb-4 botonMetodo" onClick={() => handlePago('mercado_pago')}
+                            style={{
+                                border: 'none',
+                              }}>
                             <div className="card-body text-center botonSelectorPagos">
                                 <h5 className="card-title"> <FaRegHandshake className="aumentoTam" /> Mercado Pago</h5>
                             </div>
                         </div>
                     </div>
                     <div className="col-md-4">
-                        <div ref={cardRef} className="card shadow-lg mb-4" onClick={() => handlePago('okuspay')}>
+                        <div ref={cardRef} className="card shadow-lg mb-4" onClick={() => handlePago('okuspay')}
+                            style={{
+                                border: 'none',
+                              }}>
                             <div className="card-body text-center botonSelectorPagos">
                                 <h5 className="card-title"><IoFingerPrintOutline className="aumentoTam" /> OkusPay</h5>
                             </div>
                         </div>
                     </div>
                     <div className="col-md-4">
-                        <div className="card shadow-lg mb-4" onClick={() => handlePago('tarjeta')}>
+                        <div className="card shadow-lg mb-4" onClick={() => handlePago('tarjeta')}
+                            style={{
+                                border: 'none',
+                              }}>
                             <div className="card-body text-center botonSelectorPagos">
                                 <h5 className="card-title"><FaRegCreditCard className="aumentoTam" /> Tarjeta</h5>
                             </div>

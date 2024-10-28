@@ -14,12 +14,12 @@ function Carrito() {
     ];
 
     return (
-        <div>
+        <div className='fondo'>
             {/* Botón Volver Atrás en la esquina superior izquierda */}
             <ButtonPrevious />
             
             <div className="container vh-100 d-flex flex-column justify-content-center position-relative">
-                <h1 className="text-center mb-4 text-uppercase">Selecciona un rubro</h1>
+                <h1 className="text-center mb-4 text-uppercase seleccionText">Selecciona un rubro</h1>
                 <div className="row">
                     {productos.map(producto => (
                         <div key={producto.id} className="col-md-3 mb-4">
