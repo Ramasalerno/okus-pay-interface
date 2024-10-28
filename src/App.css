@@ -1,11 +1,12 @@
 /* global.css */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 :root {
   --oscurito: #4d06b1;
   --clarito: #8964bd;
   --fondito: #000;
   ---fondito-claro: #f8f9fa;
-  ---color-titulos:  #5f5f5f;
+  ---color-titulos: #5f5f5f;
 }
 
 .fondo {
@@ -18,27 +19,27 @@ h1 {
   font-weight: 500;
 }
 
-.textoBienvenida{
+.textoBienvenida {
   font-size: 7em;
   color: var(---color-titulos);
 }
 
-.seleccionText{
+.seleccionText {
   font-size: 4em;
   color: var(---color-titulos);
 }
 
 .seleccionTitulo {
-  font-size: 4em ;
+  font-size: 4em;
   color: var(---color-titulos);
 }
 
-.escaneandoText{
+.escaneandoText {
   font-size: 3.8em;
   color: var(---color-titulos);
 }
 
-.escaneandoTextMini{
+.escaneandoTextMini {
   font-size: 2.5em;
   color: var(---color-titulos);
 }
@@ -68,7 +69,7 @@ h1 {
   cursor: pointer;
 }
 
-.botonSelectorPagos{
+.botonSelectorPagos {
   transition: all 0.3s ease-in-out !important;
   text-decoration: none;
   background-color: #8964bd;
@@ -77,7 +78,7 @@ h1 {
   outline: none;
 }
 
-.botonMetodo{
+.botonMetodo {
   border: none;
 }
 
@@ -97,7 +98,7 @@ h1 {
   color: #fff;
 }
 
-.aumentoTam{
+.aumentoTam {
   margin-right: 15px;
   font-size: 25px;
 }
@@ -110,7 +111,7 @@ h1 {
   background-color: #008f39;
 }
 
-.botonEscanearPalma{
+.botonEscanearPalma {
   transition: all 0.3s ease-in-out !important;
   text-decoration: none;
   background-color: #8964bd;
@@ -132,8 +133,17 @@ h1 {
   color: #fff;
 }
 
-.imagenGracias{
+.imagenGracias {
   margin-top: 0em;
+}
+
+.reiniciar {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 40px;
+  position: absolute;
+  top: 0px;
+  left: 15px;
 }
 
 .circle-animation {
@@ -142,12 +152,15 @@ h1 {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #008f39; /* Color verde */
-  border-radius: 50%; /* Hacerlo circular */
-  animation: expandCircle 2.5s ease forwards; /* Animación de expansión */
+  background-color: #008f39;
+  /* Color verde */
+  border-radius: 50%;
+  /* Hacerlo circular */
+  animation: expandCircle 2.5s ease forwards;
+  /* Animación de expansión */
 }
 
-.ButtonNext{
+.ButtonNext {
   color: #5f5f5f;
   text-transform: uppercase;
   font-size: 1.5em;
@@ -155,10 +168,13 @@ h1 {
 
 @keyframes expandCircle {
   from {
-      transform: scale(0); /* Comienza en tamaño cero */
+    transform: scale(0);
+    /* Comienza en tamaño cero */
   }
+
   to {
-      transform: scale(10); /* Escala a un tamaño grande */
+    transform: scale(10);
+    /* Escala a un tamaño grande */
   }
 }
 
