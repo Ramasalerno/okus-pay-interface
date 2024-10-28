@@ -36,7 +36,7 @@ function Gracias() {
                     className="imagenGracias" 
                     style={{ width: '50%' }}
                 />
-                <Link to={"/"} className='text-uppercase text-black'>Reiniciar</Link>
+                <Link to={"/"} className='text-uppercase text-black mb-5' style={{fontSize:"40px"}}>Reiniciar</Link>
             </div>
         </div>
     );

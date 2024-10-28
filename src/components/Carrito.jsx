@@ -24,7 +24,7 @@ function Carrito() {
                     {productos.map(producto => (
                         <div key={producto.id} className="col-md-3 mb-4">
                             <div
-                                className="card shadow-lg"
+                                className="card shadow-lg border-0"
                                 style={{ cursor: 'pointer' }}
                                 onClick={() => navigate('/metodo-pago')}
                             >

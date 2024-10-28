@@ -16,8 +16,8 @@ function Escaneando() {
 
     return (
         <div className="d-flex flex-column justify-content-center align-items-center vh-100 bg-black">
-            <h1 className="escaneandoText">Verificando su identidad ...</h1>
-            <h2 className="escaneandoTextMini">Por favor, aguarde unos instantes</h2>
+            <h1 className="escaneandoText">Verificando su identidad</h1>
+            <h2 className="escaneandoTextMini fs-3">Por favor, aguarde unos instantes</h2>
             <img 
                 src="https://raw.githubusercontent.com/RamiroSB/imagenes/refs/heads/main/Biometr%C3%ADa.gif" 
                 alt="Descripción de la imagen" 
