@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
-import confetti from 'canvas-confetti';
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Gracias() {
     const [isAnimating, setIsAnimating] = useState(true); // Estado para controlar la animación
@@ -36,6 +36,7 @@ function Gracias() {
                     className="imagenGracias" 
                     style={{ width: '50%' }}
                 />
+                <Link to={"/"} className='text-uppercase text-black'>Reiniciar</Link>
             </div>
         </div>
     );

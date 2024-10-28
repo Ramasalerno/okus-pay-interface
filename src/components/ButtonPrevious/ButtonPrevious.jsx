@@ -8,7 +8,7 @@ const ButtonPrevious = () => {
     return (
         <Link
             className=" position-absolute text-uppercase"
-            style={{ top: '20px', left: '20px', color: '#000' }} 
+            style={{ top: '20px', left: '20px', color: '#fff' }} 
             onClick={() => navigate(-1)} // Navegar hacia atrás
         >
             <FaArrowLeft /> Volver atrás
