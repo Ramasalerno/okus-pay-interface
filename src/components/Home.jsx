@@ -3,7 +3,7 @@ import { useRef } from 'react';
 import { gsap } from 'gsap';
 // import { FaArrowRight } from "react-icons/fa";
 import '../App.css';
-import ButtonNext from './buttonNext/buttonNext';
+import ButtonNext from './ButtonNext/ButtonNext';
 import WaterRippleEffect from './WaterRippleEffect/WaterRippleEffect';
 
 function Home() {
