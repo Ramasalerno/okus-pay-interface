@@ -1,6 +1,8 @@
 import '../App.css';
 import ButtonPrevious from './ButtonPrevious/ButtonPrevious';
 import { useNavigate } from 'react-router-dom';
+import { IoHomeSharp } from "react-icons/io5";
+
 
 function Carrito() {
     const navigate = useNavigate();
@@ -17,7 +19,7 @@ function Carrito() {
         <div className='fondo'>
             {/* Botón Volver Atrás en la esquina superior izquierda */}
             <ButtonPrevious />
-            
+
             <div className="container vh-100 d-flex flex-column justify-content-center position-relative">
                 <h1 className="text-center mb-4 text-uppercase seleccionText">Selecciona un rubro</h1>
                 <div className="row">
@@ -42,6 +44,13 @@ function Carrito() {
                         </div>
                     ))}
                 </div>
+                <IoHomeSharp
+                    color='#fff'
+                    size={50}
+                    className='text-right'
+                    style={{ position: "absolute", right: "0px", bottom: "120px", cursor: "pointer" }}
+                    onClick={() => navigate("/")}
+                />
             </div>
         </div>
     );

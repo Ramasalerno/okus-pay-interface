@@ -25,12 +25,13 @@ function Home() {
         <WaterRippleEffect onClick={handleClick}>
             <div className="contenedorComenzar">
                 <h1 className='textoBienvenida'>BIENVENIDO</h1>
-                
+
                 <div style={{ display: 'inline-flex' }}>
-                <h5 className='ButtonNext'>
+                    <button className='btnComenzar'>comenzar</button>
+                    {/* <h5 className='ButtonNext'>
                     Para comenzar haga click en cualquier parte de la pantalla
-                </h5>
-            </div>
+                </h5> */}
+                </div>
             </div>
         </WaterRippleEffect>
     );

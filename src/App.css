@@ -166,6 +166,27 @@ h1 {
   font-size: 1.5em;
 }
 
+.btnComenzar{
+  background: transparent;
+  color: #f8f9fa;
+  font-size: 1.8rem;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 0px 40px;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+.btnComenzar:hover{
+  background-color: #fff;
+  color: #000;
+  transition: all 0.2s ease;
+}
+.btnComenzar:focus-visible{
+  background-color: #fff;
+  color: #000;
+  transition: all 0.2s ease;
+}
+
 @keyframes expandCircle {
   from {
     transform: scale(0);

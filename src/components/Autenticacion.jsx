@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import { IoFingerPrintOutline } from "react-icons/io5";
+import { IoFingerPrintOutline, IoHomeSharp } from "react-icons/io5";
 import ButtonPrevious from './ButtonPrevious/ButtonPrevious';
 
 function Autenticacion() {
@@ -17,6 +17,13 @@ function Autenticacion() {
                     onClick={() => navigate('/escaneando')}>
                     <IoFingerPrintOutline className="aumentoTam" /> Escanear palma
                 </button>
+                <IoHomeSharp
+                    color='#fff'
+                    size={50}
+                    className='text-right'
+                    style={{ position: "absolute", right: "100px", bottom: "120px", cursor: "pointer" }}
+                    onClick={() => navigate("/")}
+                />
             </div>
         </div>
     );

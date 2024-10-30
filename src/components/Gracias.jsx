@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react';
+import { IoHomeSharp } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Gracias() {
     const [isAnimating, setIsAnimating] = useState(true); // Estado para controlar la animación
+    const navigate = useNavigate();
 
     useEffect(() => {
         // Cambiar el estado al finalizar la animación del círculo
@@ -19,7 +22,7 @@ function Gracias() {
                 <div>
                     <div className="circle-animation">
                     </div>
-                    <h1 
+                    <h1
                         className="text-center text-uppercase"
                         style={{ color: 'white', position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', fontSize: '2.3rem' }} // Ajustar tamaño aquí
                     >
@@ -27,16 +30,23 @@ function Gracias() {
                     </h1>
                 </div>
             )}
-            
+
             {/* Contenido principal */}
             <div className={`d-flex flex-column justify-content-center align-items-center vh-100 ${isAnimating ? 'd-none' : ''}`}>
-                <img 
-                    src="https://raw.githubusercontent.com/RamiroSB/imagenes/refs/heads/main/okusp/okplv.png" 
-                    alt="Descripción de la imagen" 
-                    className="imagenGracias" 
+                <img
+                    src="https://raw.githubusercontent.com/RamiroSB/imagenes/refs/heads/main/okusp/okplv.png"
+                    alt="Descripción de la imagen"
+                    className="imagenGracias"
                     style={{ width: '50%' }}
                 />
                 <Link to={"/"} className='reiniciar'>Reiniciar</Link>
+                <IoHomeSharp
+                    color='#000'
+                    size={50}
+                    className='text-right'
+                    style={{ position: "absolute", right: "100px", bottom: "120px", cursor: "pointer" }}
+                    onClick={() => navigate("/")}
+                />
             </div>
         </div>
     );
