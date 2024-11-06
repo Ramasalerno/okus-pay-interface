@@ -44,13 +44,15 @@ function Carrito() {
                         </div>
                     ))}
                 </div>
-                <IoHomeSharp
-                    color='#fff'
-                    size={50}
-                    className='text-right'
-                    style={{ position: "absolute", right: "0px", bottom: "120px", cursor: "pointer" }}
-                    onClick={() => navigate("/")}
-                />
+                <a href="https://okuspay.com.ar/">
+                    <IoHomeSharp
+                        color='#fff'
+                        size={50}
+                        className='text-right'
+                        style={{ position: "absolute", right: "0px", bottom: "120px", cursor: "pointer" }}
+                    
+                    />
+                </a>
             </div>
         </div>
     );

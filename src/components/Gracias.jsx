@@ -1,11 +1,9 @@
 import { useEffect, useState } from 'react';
 import { IoHomeSharp } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
 
 function Gracias() {
     const [isAnimating, setIsAnimating] = useState(true); // Estado para controlar la animación
-    const navigate = useNavigate();
 
     useEffect(() => {
         // Cambiar el estado al finalizar la animación del círculo
@@ -40,13 +38,14 @@ function Gracias() {
                     style={{ width: '50%' }}
                 />
                 <Link to={"/"} className='reiniciar'>Reiniciar</Link>
-                <IoHomeSharp
-                    color='#000'
-                    size={50}
-                    className='text-right'
-                    style={{ position: "absolute", right: "100px", bottom: "120px", cursor: "pointer" }}
-                    onClick={() => navigate("/")}
-                />
+                <a href="https://okuspay.com.ar/">
+                    <IoHomeSharp
+                        color='#000'
+                        size={50}
+                        className='text-right'
+                        style={{ position: "absolute", right: "100px", bottom: "120px", cursor: "pointer" }}
+                    />
+                </a>
             </div>
         </div>
     );
